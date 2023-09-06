@@ -16,7 +16,6 @@ bool comp(pair<int,int> a, pair<int,int> b){
 
 vector<int> solution(vector<string> genres, vector<int> plays) {
     vector<int> answer;
-    int cnt = 1;
     for(int i=0;i<genres.size();i++){
         play_cnt[genres[i]]+= plays[i];
         songs[genres[i]].push_back({i, plays[i]});
